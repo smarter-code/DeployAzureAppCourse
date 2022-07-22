@@ -19,9 +19,10 @@ namespace DeployAzureApp.Controllers
         [HttpPost]
         public async Task<IActionResult> PostAsync(IFormFile file)
         {
-            var computerVisionClient = OCRService.GetComputerVisionClient();
+
             try
             {
+                //var computerVisionClient = OCRService.GetComputerVisionClient();
                 //  var fileResult = await OCRService.ReadImage(computerVisionClient, file);
                 //  AzureSQLService.WriteFileNameAndTextToSQL(file.FileName, fileResult);
                 //  await StorageAccountService.UploadFileToStorageAccountAsync(file);
